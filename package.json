@@ -1,0 +1,18 @@
+{
+    "name": "node-cv",
+    "version": "0.0.1",
+    "description": "My CV",
+    "main": "server.js",
+    "dependencies": {
+        "backbone": "1.x",
+        "browserify": "3.x",
+        "kolba": "*"
+    },
+    "engines": {
+        "node": "0.10.12",
+        "npm": "1.2.30"
+    },
+    "scripts": {
+        "postinstall": "./node_modules/browserify/bin/cmd.js -i cheerio -i fs -e browser.js -o bundle.js || true"
+    }
+}
